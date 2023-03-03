@@ -48,4 +48,15 @@ form.addEventListener('submit', (event) => {
     }).catch((error) => {
         console.log("Error is: ", error);
     });
+
+    localStorage.setItem('city', city);
 });
+
+const localStorageCity = localStorage.getItem('city');
+if (localStorageCity !== null) {
+    getWeatherAndCityDeatils(localStorageCity).then((data) => {
+        updateUI(data);
+    }).catch((error) => {
+        console.log("Error is: ", error);
+    });
+}

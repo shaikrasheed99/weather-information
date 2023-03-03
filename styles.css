@@ -1,0 +1,19 @@
+body {
+    background-color: #eeedec;
+}
+
+input:focus {
+    border: 0;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.icon {
+    position: relative;
+    top: -8vh;
+    border-radius: 50%;
+    width: 20%;
+    margin-bottom: -5vw;
+}
